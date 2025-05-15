@@ -1,0 +1,29 @@
+# System files
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+
+# IDE/editor settings
+.vscode/
+.idea/
+*.sublime-workspace
+*.sublime-project
+
+# Node modules (in case you later use npm for anything)
+node_modules/
+
+# Environment/Secrets (if you store any keys locally)
+.env
+.env.local
+.env.*.local
+
+# Build artifacts (optional, in case you ever build assets)
+dist/
+build/
+
+# Optional: OS swap and backup files
+*.swp
+*.bak
+*~

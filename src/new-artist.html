@@ -1,0 +1,161 @@
+<!-- * WEB222 – Assignment 06
+*
+* I declare that this assignment is my own work in accordance with
+* Seneca Academic Policy. No part of this assignment has been
+* copied manually or electronically from any other source
+* (including web sites) or distributed to other students.
+*
+* Please update the following with your information:
+*
+*      Name:       RUCHELLE BAYBAYAN
+*      Student ID: 019315159
+*      Date:       November 29th 2024 -->
+
+<!doctype html>
+<html lang="en-CA">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Ruchelle Baybayan" />
+    <title>Request an Artist</title>
+    <link rel="stylesheet" href="./css/styles.css" />
+  </head>
+
+  <body>
+    <header>
+      <h1>Jazz Cafe</h1>
+      <p class="slogan">Relax and listen to modern jazz while drinking a warm latte.</p>
+      <nav id="menu">
+        <button id="home">Home</button>
+        <button id="newArtist">Request A New Artist</button>
+      </nav>
+    </header>
+
+    <br />
+    <hr class="divider" />
+
+    <main>
+      <div id="form-wrapper">
+        <form id="music-form" action="https://httpbin.org/post" method="post">
+          <h2>REQUEST A NEW ARTIST</h2>
+          <p>Share some of your favourite artists with us!</p>
+
+          <label for="artistName">Artist's Name:</label>
+          <br />
+          <input
+            type="text"
+            id="artistName"
+            name="artistName"
+            placeholder="Ella Fitzgerald"
+            required
+          />
+          <br /><br />
+
+          <label for="genre">Music Genre:</label>
+          <br />
+          <input
+            list="genres"
+            id="genre"
+            name="genre"
+            placeholder="Select or enter a genre"
+            required
+          />
+          <datalist id="genres">
+            <option value="Swing"></option>
+            <option value="Bebop"></option>
+            <option value="Cool Jazz"></option>
+            <option value="Hard Bop"></option>
+            <option value="Bossa Nova"></option>
+            <option value="Smooth Jazz"></option>
+            <option value="Free-style Jazz"></option>
+            <option value="Jazz Fusion"></option>
+            <option value="Latin Jazz"></option>
+            <option value="Nu-Jazz"></option>
+          </datalist>
+          <br /><br />
+
+          <label for="socialMedia">Social Media Links:</label>
+          <br />
+          <input
+            type="url"
+            id="socialMedia"
+            name="socialMedia"
+            placeholder="https://instagram.com, ..."
+            required
+          />
+          <br /><br />
+
+          <label for="songLinks">Song/Video Links:</label>
+          <button type="button" id="addSongLink">Add New Link</button>
+          <br />
+          <div id="songLinkWrapper">
+            <input
+              type="url"
+              id="sLinks"
+              name="songLinks"
+              placeholder="Enter the URL for a song/video"
+              required
+            />
+            <br />
+          </div>
+
+          <br />
+          <input type="checkbox" id="explicit" name="explicit" />
+          <label for="explicit">The song(s) have explicit lyrics</label>
+          <br /><br />
+
+          <label for="reason">Why should this artist be added?</label>
+          <br />
+          <textarea
+            id="reason"
+            name="reason"
+            placeholder="I think this artist has a really unique way of playing the guitar.."
+            required
+          ></textarea>
+          <br /><br />
+          <input type="submit" id="requestBtn" disabled />
+        </form>
+      </div>
+    </main>
+
+    <footer>
+      <div class="footer-container">
+        <div id="newsletter">
+          <form id="email-form" action="https://httpbin.org/post" method="post">
+            <h5>Join Jazz Cafe's Newsletter</h5>
+            <hr />
+            <br />
+            Get the latest scoop on your favourite Jazz artists.
+            <br /><br />
+            <label for="email">
+              <input type="email" id="email" name="email" placeholder="frank.sinatra@gmail.com" />
+            </label>
+            <input type="submit" id="newsSubmitBtn" name="newsSubmitBtn" value="Join" disabled />
+          </form>
+        </div>
+        <div class="footer-menu">
+          <h5>Upcoming Tours</h5>
+          <hr />
+          <a href="https://www.laufeymusic.com/tourmobile">Laufey</a>
+          <br />
+          <br />
+          <a href="https://www.ticketmaster.ca/eloise-tickets/artist/2495570">Eloise</a>
+          <br />
+          <br />
+          <a href="https://www.ticketmaster.ca/bruno-major-tickets/artist/2007696">Bruno</a>
+        </div>
+        <div class="help-menu">
+          <h5>Contact Us</h5>
+          <hr />
+          <a href="mailto:rbaybayan2@myseneca.ca">Email</a>
+          <br />
+          <br />
+          <a>Phone: (416) 491-5050</a>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Form File -->
+    <script src="./js/form.js"></script>
+  </body>
+</html>
