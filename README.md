@@ -1,6 +1,6 @@
 # JazzCafe
 
-A basic front-end project built with HTML, CSS, and JavaScript.
+A cozy web app showcasing the music of three modern jazz-inspired artists: **Laufey**, **Eloise**, and **Bruno Major**. Built with HTML, CSS, and JavaScript, JazzCafe offers a smooth user experience with a clean design to showcase various songs by the artists.
 
 ## 🚀 Features
 
