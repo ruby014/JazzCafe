@@ -1,21 +1,3 @@
-# Assignment 5 and 6 Instructions
-
-NOTE: this assignment combines Assignment 5 and 6 into one, and is 2x the marks.
-
-## Introduction
-
-Please see detailed instructions in the comments within src/index.html and src/contact.html
-
-Due Date: Friday April 12th by Midnight.
-
-To submit your assignment, you must successfully run the "npm run prepare-submission"
-build script discussed below.  Please read all of the following information
-carefully, and don't skip any steps.
-
-The following setup is meant to give you some experience working with
-command-line build environments, automated testing, and validation for
-web projects.
-
 ## Setup
 
 Install all the necessary dependencies using the npm command (installed with node):
